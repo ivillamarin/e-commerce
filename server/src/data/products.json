@@ -1,0 +1,5 @@
+[
+{ "id": 1, "name": "Alpargata Clásica", "price": 3500 },
+{ "id": 2, "name": "Alpargata Urbana", "price": 4200 },
+{ "id": 3, "name": "Alpargata Eco", "price": 3900 }
+]
