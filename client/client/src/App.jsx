@@ -1,22 +1,29 @@
-import './style.css';
-import ProductList from './components/productList/indexList';
-import Cart from './components/cart/cart';
-import ProductCard from './components/productCard/indexCard';
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/NavBar/Navbar';
 
-const sampleProduct = {
-  name: "Alpargata Clásica",
-  price: 3500,
-  imageUrl: "https://via.placeholder.com/150"
-};
+import Home from './pages/Home';
+import Catalogo from './pages/Catalogo';
+import Nosotros from './pages/Nosotros';
+import Contacto from './pages/Contacto';
+import Cart from './components/cart/cart'; // Si querés usarlo en Carrito.jsx
+import ProductDetails from './pages/productDetail';
+
 
 function App() {
   return (
-    <div>
-      <h1>Catálogo</h1>
-      <ProductCard product={sampleProduct} />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/catalogo" element={<Catalogo />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/carrito" element={<Cart />} />
+        <Route path="/producto/:id" element={<ProductDetails />} />
+      </Routes>
+    </Router>
   );
 }
+
 
 export default App;

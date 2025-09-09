@@ -1,0 +1,63 @@
+.contacto-container {
+    padding: 3rem;
+    text-align: center;
+    background-color: #F9F5F0;
+}
+
+.contacto-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4B3F2F;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.formulario-contacto button {
+    background-color: #8B5E3C;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contacto-redes p {
+    font-size: 1rem;
+    color: #4B3F2F;
+    margin-bottom: 0.5rem;
+}
+
+.contacto-redes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto-redes li {
+    margin: 0.3rem 0;
+}
+
+.contacto-redes a {
+    color: #A06A45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacto-redes a:hover {
+    text-decoration: underline;
+}

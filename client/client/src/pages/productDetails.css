@@ -1,0 +1,39 @@
+.detalle-producto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F5F0;
+}
+
+.detalle-producto img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-info {
+    max-width: 500px;
+    text-align: left;
+}
+
+.detalle-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #4B3F2F;
+    margin-bottom: 1rem;
+}
+
+.detalle-info p {
+    font-size: 1.1rem;
+    color: #6B4F3B;
+    margin-bottom: 0.8rem;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #8B5E3C;
+}

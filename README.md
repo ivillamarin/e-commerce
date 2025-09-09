@@ -69,3 +69,5 @@ README.md
 ## Notas
 - Este proyecto es educativo. Endurecé seguridad antes de producción (CORS, rate limit, validaciones, etc.).
 - Si no configurás Mercado Pago, el resto funciona (catálogo/carrito/órdenes locales). El botón de pagar mostrará un error claro.
+
+/*-----
