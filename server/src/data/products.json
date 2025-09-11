@@ -1,5 +1,5 @@
 [
-{ "id": 1, "name": "Alpargata Clásica", "price": 3500 },
-{ "id": 2, "name": "Alpargata Urbana", "price": 4200 },
-{ "id": 3, "name": "Alpargata Eco", "price": 3900 }
+{ "id": 1, "name": "Alpargata Clásica","img": "/img/alpargata1.jpg", "price": 3500 },
+{ "id": 2, "name": "Alpargata Urbana","img": "/img/alpargata1.jpg", "price": 4200 },
+{ "id": 3, "name": "Alpargata Eco","img": "/img/alpargata1.jpg", "price": 3900 }
 ]
