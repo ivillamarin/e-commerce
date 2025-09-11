@@ -1,27 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Domine:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    margin:0;
+    padding:0;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #8B5E3C;
-    color: #fff;
+    background-color: #ffffffd6;
+    color: #e99551;
+    border: rgb(238, 238, 238) solid 0.55px;
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin-right: 680px;
+    font-family:sans-serif;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #e99551;
+    margin-left: 30px;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-links a:hover {

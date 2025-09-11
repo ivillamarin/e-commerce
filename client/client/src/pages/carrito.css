@@ -55,3 +55,41 @@
     font-size: 1.4rem;
     color: #4B3F2F;
 }
+
+
+.carrito-resumen {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #fdf6f0; /* tono cálido tipo papel artesanal */
+  border: 1px solid #d8c4b0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #4b3f2f;
+}
+
+.carrito-resumen p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.carrito-resumen strong {
+  font-weight: bold;
+  color: #2e1f0f;
+}
+
+.carrito-resumen .btn-success {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #6c9a8b;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carrito-resumen .btn-success:hover {
+  background-color: #4e7c6d;
+}

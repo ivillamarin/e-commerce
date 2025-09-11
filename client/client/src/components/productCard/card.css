@@ -1,5 +1,5 @@
 .card {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 1.2rem;
@@ -13,12 +13,16 @@
     transform: translateY(-5px);
 }
 
+/* 
 .card img {
     width: 100%;
     height: auto;
     border-radius: 6px;
     margin-bottom: 0.8rem;
-}
+}  Selecciona los elementos <img> que están dentro de un elemento con la clase .card.
+    Útil para aplicar estilos específicos a las imágenes contenidas en tarjetas, como tamaño, bordes o efectos visuales.
+*/
+
 
 .card h3 {
     font-family: 'Playfair Display', serif;

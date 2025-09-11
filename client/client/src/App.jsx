@@ -1,17 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/NavBar/Navbar';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from './pages/Home';
-import Catalogo from './pages/Catalogo';
-import Nosotros from './pages/Nosotros';
-import Contacto from './pages/Contacto';
-import Cart from './components/cart/cart'; // Si querés usarlo en Carrito.jsx
-import ProductDetails from './pages/productDetail';
-
+import Navbar from "./components/NavBar/Navbar";
+import Home from "./pages/Home";
+import Catalogo from "./pages/Catalogo";
+import Nosotros from "./pages/Nosotros";
+import Contacto from "./pages/Contacto";
+import Cart from "./pages/Carrito";
+import ProductDetails from "./pages/productDetail";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,9 +21,9 @@ function App() {
         <Route path="/carrito" element={<Cart />} />
         <Route path="/producto/:id" element={<ProductDetails />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
-
 export default App;
+

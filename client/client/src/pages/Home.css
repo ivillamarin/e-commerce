@@ -1,30 +1,63 @@
 .home-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;
-    background-color: #3b3b3b;
-    text-align: center;
-    color: #fff;
+    background-image: url('../../public/images/bordo04-f04c970710f9a7425617054914156529-1024-1024.png');
+    text-align:left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image:
+        linear-gradient(to right, #fff 0%, rgba(255,255,255,0.0) 80%),
+        url('../../public/images/bordo04-f04c970710f9a7425617054914156529-1024-1024.png');
+    color: #572504;
+    margin-left: 100px;
 }
 
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 8rem;
     margin-bottom: 1rem;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     margin-bottom: 2rem;
+    color: #4c2206;
 }
 
 .btn-ver-productos {
-    padding: 0.8rem 1.5rem;
-    background-color: #8B5E3C;
+    padding: 1rem 2.2rem;
+    background-color: #a8421c;
     color: #fff;
     border: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    margin-left: 50px;
+}
+.btn-ver-productos:hover {
+    background-color: #ffffff;
+    color:#a8421c ;
+    transition: transform 0.2s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(168, 66, 28, 0.15);
+}
+.btn-ver-productos2 {
+    padding: 1rem 2.2rem;
+    background-color: #ffffff;
+    color: #a8421c;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.btn-ver-productos2:hover {
+    background-color: #a8421c;
+    color: white;
+    transition: transform 0.2s ease;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(168, 66, 28, 0.15);
 }

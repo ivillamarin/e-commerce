@@ -1,44 +1,43 @@
 import { useCart } from '../context/cartContext';
 import ProductCard from '../components/productCard/indexCard';
 import './Catalogo.css';
+import { useState, useEffect } from 'react';
 
 function Catalogo() {
 const { agregarProducto } = useCart();
+const [productos, setProductos] = useState([]);
 
-const productos = [
-    {
-    id: 1,
-        nombre: 'Alpargata Clásica',
-        precio: 3500,
-        imagen: 'https://via.placeholder.com/150'
-    },
-    {
-        id: 2,
-        nombre: 'Bolso de Lona',
-        precio: 5800,
-        imagen: 'https://via.placeholder.com/150'
-    },
-    {
-        id: 3,
-        nombre: 'Camisa de Lino',
-        precio: 7200,
-        imagen: 'https://via.placeholder.com/150'
+useEffect(() => {
+    const cargarProductos = async () =>  {
+    try {
+        const res = await fetch('/api/productos');
+        const data = await res.json();
+        setProductos(data);
+    } catch (error) {
+        console.error('Error al cargar productos:', error);
     }
-];
+    }
+
+    cargarProductos();
+}, []);
 
 return (
-    <section className="catalogo">
+    <div className="catalogo">
         <h2>Catálogo</h2>
-        <div className="productos-grid">
-        {productos.map(producto => (
+    <div className="catalogo-products-grid">
+        {productos.length === 0 ? (
+        <p>Cargando productos...</p>
+        ) : (
+        productos.map((producto) => (
             <ProductCard
-            key={producto.id}
-            producto={producto}
-            onAgregar={() => agregarProducto(producto)}
-        />
-        ))}
+                key={producto.id}
+                producto={producto}
+                onAgregar={() => agregarProducto(producto)}
+            />
+        ))
+        )}
     </div>
-    </section>
+</div>
 );
 }
 
